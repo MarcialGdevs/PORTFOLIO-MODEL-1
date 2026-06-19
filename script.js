@@ -110,32 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ----- CONTACT FORM submission ----- */
-  const form        = document.getElementById('contactForm');
-  const submitBtn   = document.getElementById('submitBtn');
-  const formSuccess = document.getElementById('formSuccess');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Simulate sending
-    submitBtn.textContent = 'Sending…';
-    submitBtn.disabled = true;
-    setTimeout(() => {
-      submitBtn.textContent = 'Message Sent!';
-      submitBtn.style.background = '#22c55e';
-      submitBtn.style.borderColor = '#22c55e';
-      formSuccess.classList.add('show');
-      form.reset();
-      setTimeout(() => {
-        submitBtn.textContent = 'Send Message';
-        submitBtn.disabled = false;
-        submitBtn.style.background = '';
-        submitBtn.style.borderColor = '';
-        formSuccess.classList.remove('show');
-      }, 4000);
-    }, 1200);
-  });
-
+ 
   /* ----- Smooth active nav highlight on scroll ----- */
   const sections = document.querySelectorAll('section[id]');
   const navAnchors = document.querySelectorAll('.nav-links a');
