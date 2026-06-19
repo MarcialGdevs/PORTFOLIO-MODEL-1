@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Rivera — BSIT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AR<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg-text">BSIT</div>
+    <div class="hero-content">
+      <div class="profile-wrapper">
+        <div class="profile-img-container" id="profileContainer">
+          <img src="" alt="Alex Rivera" class="profile-img" id="profileImg" style="display:none"/>
+          <div class="profile-placeholder" id="profilePlaceholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="28" r="16" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <label for="imageUpload" class="upload-label">Click to upload photo</label>
+            <input type="file" id="imageUpload" accept="image/*" hidden />
+          </div>
+          <button class="change-photo-btn" id="changePhotoBtn" style="display:none">
+            <label for="imageUpload2">Change Photo</label>
+            <input type="file" id="imageUpload2" accept="image/*" hidden />
+          </button>
+        </div>
+        <div class="availability-badge">
+          <span class="pulse"></span>
+          Available for work
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow">Bachelor of Science in Information Technology</p>
+        <h1 class="hero-name">Alex<br><em>Rivera</em></h1>
+        <p class="hero-tagline">Full-Stack Developer & IT Specialist turning complex problems into clean digital solutions.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Get in touch</a>
+          <a href="#experience" class="btn-ghost">View work</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects Delivered</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">8</span><span class="stat-label">Tech Stacks</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Career Journey</p>
+        <h2 class="section-title">Work <em>Experience</em></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-index="0">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="job-title">Junior Web Developer</h3>
+                <p class="company">NexaBridge Solutions</p>
+              </div>
+              <span class="job-period">2023 – Present</span>
+            </div>
+            <ul class="job-duties">
+              <li>Built and maintained responsive web applications using React.js and Node.js.</li>
+              <li>Collaborated with UI/UX designers to translate wireframes into functional interfaces.</li>
+              <li>Reduced page load times by 35% through code optimization and lazy loading strategies.</li>
+              <li>Integrated RESTful APIs and third-party services for seamless data exchange.</li>
+            </ul>
+            <div class="job-tags">
+              <span>React</span><span>Node.js</span><span>MySQL</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="job-title">IT Support Specialist</h3>
+                <p class="company">OrbiTech Enterprises</p>
+              </div>
+              <span class="job-period">2022 – 2023</span>
+            </div>
+            <ul class="job-duties">
+              <li>Provided Level 1 and Level 2 technical support to over 200 employees.</li>
+              <li>Managed and configured network infrastructure including routers, switches, and firewalls.</li>
+              <li>Developed an internal ticketing system that cut average resolution time by 40%.</li>
+              <li>Conducted regular security audits and implemented endpoint protection policies.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Networking</span><span>Windows Server</span><span>Helpdesk</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <h3 class="job-title">IT Intern</h3>
+                <p class="company">DataCore Philippines</p>
+              </div>
+              <span class="job-period">2021 – 2022</span>
+            </div>
+            <ul class="job-duties">
+              <li>Assisted in database administration tasks including backups, queries, and optimization.</li>
+              <li>Supported the development team in testing and quality assurance for web features.</li>
+              <li>Documented system processes and created user manuals for internal tools.</li>
+            </ul>
+            <div class="job-tags">
+              <span>SQL</span><span>QA Testing</span><span>Documentation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">Skills & <em>Tools</em></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>HTML / CSS</span><div class="bar"><div class="bar-fill" style="--pct: 95%"></div></div></div>
+            <div class="skill-bar-item"><span>JavaScript</span><div class="bar"><div class="bar-fill" style="--pct: 88%"></div></div></div>
+            <div class="skill-bar-item"><span>React.js</span><div class="bar"><div class="bar-fill" style="--pct: 80%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Node.js</span><div class="bar"><div class="bar-fill" style="--pct: 78%"></div></div></div>
+            <div class="skill-bar-item"><span>PHP / Laravel</span><div class="bar"><div class="bar-fill" style="--pct: 72%"></div></div></div>
+            <div class="skill-bar-item"><span>Python</span><div class="bar"><div class="bar-fill" style="--pct: 65%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Database & Tools</h4>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>MySQL / PostgreSQL</span><div class="bar"><div class="bar-fill" style="--pct: 85%"></div></div></div>
+            <div class="skill-bar-item"><span>Git / GitHub</span><div class="bar"><div class="bar-fill" style="--pct: 90%"></div></div></div>
+            <div class="skill-bar-item"><span>Linux / Server Admin</span><div class="bar"><div class="bar-fill" style="--pct: 70%"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications">
+        <h4>Education & Certification</h4>
+        <div class="cert-cards">
+          <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <div>
+              <p class="cert-name">B.S. Information Technology</p>
+              <p class="cert-school">University of the Philippines — 2022</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <div>
+              <p class="cert-name">CompTIA A+ Certified</p>
+              <p class="cert-school">CompTIA — 2022</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">☁️</div>
+            <div>
+              <p class="cert-name">AWS Cloud Practitioner</p>
+              <p class="cert-school">Amazon Web Services — 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Let's connect</p>
+        <h2 class="section-title">Get in <em>Touch</em></h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p class="contact-intro">Whether you have a project in mind, a role to fill, or just want to talk tech — my inbox is always open.</p>
+          <div class="contact-items">
+            <a href="mailto:alex.rivera@email.com" class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">alex.rivera@email.com</p>
+              </div>
+            </a>
+            <a href="tel:+639171234567" class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+63 917 123 4567</p>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Quezon City, Metro Manila, PH</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Portfolio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Juan" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Dela Cruz" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="juan@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">Send Message</button>
+          <p class="form-success" id="formSuccess">✓ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Alex Rivera · BSIT · Crafted with purpose</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
